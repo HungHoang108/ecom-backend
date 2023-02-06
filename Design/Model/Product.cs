@@ -1,15 +1,12 @@
 namespace Model;
 
-public class Product : UpdateContent
+public class Product
 {
-    public int Id { get; set; }
-    public string category { get; set; }
-    public string[] images { get; set; }
+    public int Id { get; init; }
+    public string Title { get; set; } = string.Empty;
+    public double Price { get; set; }
+    public string Description { get; set; } = string.Empty;
+    public string Category { get; set; } = string.Empty;
+    public string[] Images { get; set; }
 }
 
-public class UpdateContent
-{
-    public string title { get; set; } = string.Empty;
-    public int price { get; set; } 
-    public string description { get; set; } = string.Empty;
-}

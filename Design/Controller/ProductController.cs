@@ -7,17 +7,17 @@ public class ProductController
         {
             new Product {
                 Id = 1,
-                title = "product 1",
-                price = 200,
-                description = "hello",
-                images = new string[] {"url1", "url2", "url3"},
+                Title = "product 1",
+                Price = 25.99,
+                Description = "hello",
+                Images = new string[] {"url1", "url2", "url3"},
             },
                 new Product {
                 Id = 300,
-                title = "product 2",
-                price = 200,
-                description = "hello",
-                images = new string[] {"url1", "url2", "url3"},
+                Title = "product 2",
+                Price = 20.99,
+                Description = "hello",
+                Images = new string[] {"url1", "url2", "url3"},
             }
         };
     public async Task<List<Product>> GetAllAsync()
@@ -57,9 +57,9 @@ public class ProductController
         {
             throw new ArgumentException("Product is not found");
         }
-        products[product].title = updateInfo.title;
-        products[product].price = updateInfo.price;
-        products[product].description = updateInfo.description;
+        products[product].Title = updateInfo.Title;
+        products[product].Price = updateInfo.Price;
+        products[product].Description = updateInfo.Description;
 
         return products;
     }

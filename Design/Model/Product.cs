@@ -1,16 +1,9 @@
 namespace Model;
 
-public class Product : NewProduct
+public class Product : UpdateContent
 {
-
     public int Id { get; set; }
-    public Category category { get; set; }
-}
-
-public class NewProduct : UpdateContent
-{
-
-    public int categoryId { get; set; }
+    public string category { get; set; }
     public string[] images { get; set; }
 }
 

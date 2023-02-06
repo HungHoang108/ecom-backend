@@ -25,7 +25,7 @@ public class ProductController
         return products;
     }
 
-    public async Task<List<Product>> AddAsync(Product product)
+    public async Task<List<Product>> Addsync(Product product)
     {
         products.Add(product);
         return products;
